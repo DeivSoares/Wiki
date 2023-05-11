@@ -1,0 +1,100 @@
+@media (max-width: 1024px) {
+
+    body div.content-web aside {
+        position: absolute;
+        left: -200px;
+        gap: 4.5rem;
+        animation: CloseMenu 1s;
+        animation-fill-mode: forwards;
+    }
+
+    body div.content-web aside.activated {
+        animation: OpenMenu 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes OpenMenu {
+        from {
+            left: -200px;
+            opacity: 0;
+        }
+
+        to {
+            left: 0px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes CloseMenu {
+        from {
+            left: 0px;
+            opacity: 1;
+        }
+
+        to {
+            left: -200px;
+            opacity: 0;
+        }
+    }
+
+    body div.content-web main div.espaconav {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    body div.content-web main div.espaconav button{
+        border: 1px solid #fec16a;
+        border-radius: 1.5rem;
+        background-color: var(--bg-boxcolor);
+    }
+
+    body div.content-web main div.espaconav button svg path{
+        stroke: #fec16a;
+    }
+
+    body div.content-web main div.welcome {
+        height: fit-content;
+    }
+
+    body div.content-web main div.mixwindow div.seletor {
+        flex-direction: column;
+    }
+
+    body div.content-web main div.agewindow div table {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    body div.content-web main div.equipswindow div.seletor div {
+        width: 9.5rem;
+    }
+
+    body div.content-web main div.mapswindow div.mapa-area {
+        margin-top: 5rem;
+    }
+
+    body div.content-web main div.mapswindow div.mapa-area div.mapa-box {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    body div.content-web main div.mapswindow div.mapa-area div.mapa-box div.area-preta img {
+        width: 50%;
+        height: 90%;
+    }
+
+    body div.content-web main div.mapswindow div.mapa-area div.mapa-box div.info-area {
+        width: 100%;
+        padding: 0px;
+        padding-top: 1.5rem;
+        align-items: center;
+    }
+
+    body div.content-web main div.mapswindow div.mapa-area div.mapa-box div.info-area p {
+        font-size: 1.8rem;
+        margin-block: 1rem;
+    }
+}
